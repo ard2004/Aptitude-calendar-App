@@ -8,9 +8,8 @@ if (!fs.existsSync(logsDir)) {
 }
 
 // Function to log req.body into a file
-export const logRequestBody = (req,customHeading) => {
+export const logRequestBody = (req,customHeading="===Log entry===") => {
   const bodyString = customHeading + JSON.stringify(req.body) + customHeading;
-  console.log(`body string ${bodyString}`);
 
   const now = new Date();
   const formattedDate = now.toISOString().split("T")[0]; // YYYY-MM-DD
