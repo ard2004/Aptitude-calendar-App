@@ -32,3 +32,12 @@ export const centuryToOddDays = {
     200: 3,  // 1800, 2200, etc.
     300: 1   // 1900, 2300, etc.
 }
+export const numberToDay = {
+    0: "Sunday",
+    1: "Monday",
+    2: "Tuesday",
+    3: "Wednesday",
+    4: "Thursday",
+    5: "Friday",
+    6: "Saturday"
+}

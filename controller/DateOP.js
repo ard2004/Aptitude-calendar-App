@@ -3,12 +3,14 @@ import { f_x } from "../utils/f_x.js";
 import { logRequestBody } from "../utils/logger.js";
 import { dateSanitizer } from "../utils/sanitizer.js";
 import { t_x } from "../utils/t_x.js";
+import { numberToDay } from "../utils/table.js";
 export const dateOP = (req,res) =>{
     logRequestBody(req,"form-date")
     try{
         console.log(`dateOP on  ${req.body["date"]}`)
         const finalOp = pipeline(req.body["date"])
-        res.send(`<h1>The day is: ${finalOp}`)
+        const ultraFinalOp = numberToDay[parseInt(finalOp)]
+        res.send(`<h1>The day is: ${ultraFinalOp}`)
     } catch (e) {
         console.log("Error at DateOP.js",e)
         res.sendStatus(500)

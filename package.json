@@ -9,7 +9,7 @@
   },
   "author": "",
   "license": "MIT",
-  "description": "",
+  "description": "Give any date returns day",
   "devDependencies": {
     "nodemon": "^3.1.10"
   },
