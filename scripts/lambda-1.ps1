@@ -1,0 +1,1 @@
+aws lambda create-function --function-name "calendar-mitra" --runtime "nodejs20.x" --role "arn:aws:iam::145398923926:role/LambdaServiceRole" --handler "lambda.handler" --zip-file "fileb://D:\codebox\DevSpace\Reusable Calendar Mitra\artifacts\calendar-mitra.zip" --profile ard --output "json"
